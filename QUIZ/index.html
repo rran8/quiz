@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+        <h1>Welcome to Quiz</h1>
+        <p>Are you ready to test your knowledge?</p>
+        <button onclick="startQuiz()">Start Quiz</button>
+    <script>
+        function startQuiz() {
+            window.location.href = "question1.html";
+            sessionStorage.clear(); // Hapus data skor dan nomor pertanyaan sebelumnya saat memulai kuis baru
+        }
+    </script>
+</body>
+</html>

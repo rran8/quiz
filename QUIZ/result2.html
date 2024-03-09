@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Result</title>
+</head>
+<body>
+    <div class="container">
+        <h1>SEMANGAT</h1>
+        <p>Your score: <span id="score"></span></p>
+    </div>
+    <script>
+        let score = sessionStorage.getItem('score') || 60;
+        document.getElementById('score').textContent = score;
+
+    </script>
+</body>
+</html>
